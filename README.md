@@ -55,7 +55,8 @@ This project builds a pipeline to clean, process, and generate insights from raw
 
 ## 📷 Screenshots
 
-(Add your screenshots here)
+<img width="1633" height="544" alt="image" src="https://github.com/user-attachments/assets/8b98ccee-4bdd-4dc5-8944-48459a39447e" />
+
 
 ---
 
