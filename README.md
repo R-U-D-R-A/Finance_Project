@@ -1,24 +1,76 @@
-🚀 PROJECT: Real-Time Financial Analytics Pipeline
-Problem Statement
-Build a system that:
-- Ingests transaction data continuously
-- Cleans and processes it
-- Generates business insights
-- Serves data to dashboards
-- Applies governance and access control
-- Architectur
-- Data Source (CSV / Streaming)
-        ↓
-Auto Loader (Streaming Ingestion)
-        ↓
-Bronze Table (Raw Data)
-        ↓
-Silver Table (Cleaned Data)
-        ↓
-Gold Table (Aggregated Insights)
-        ↓
-SQL Endpoint → Dashboard
-        ↓
-Workflow + Automation + Monitoring
-        ↓
-Unity Catalog (Governance)
+# Finance Data Pipeline (Databricks)
+
+## 📌 Problem
+Raw financial transaction data is often messy, inconsistent, and not directly usable for analytics.  
+This project builds a pipeline to clean, process, and generate insights from raw transaction data.
+
+---
+
+## ⚙️ Pipeline Architecture
+
+1. **Bronze Layer**
+   - Raw data ingestion from CSV
+2. **Silver Layer**
+   - Data cleaning (remove nulls, invalid values)
+3. **Gold Layer**
+   - Aggregation for business insights
+
+---
+
+## 🚀 Features
+
+- Delta Lake (ACID transactions)
+- Time Travel (data versioning)
+- Query Optimization (OPTIMIZE, VACUUM)
+- Workflow Automation (Databricks Jobs)
+- Dashboard (KPI, charts, filters)
+- Join with lookup table
+- Role-based data access (Governance)
+
+---
+
+## 🛠 Tech Stack
+
+- Databricks
+- SQL
+- Delta Lake
+
+---
+
+## 📊 Output
+
+- Total revenue KPI
+- Revenue by city
+- Transaction summary dashboard
+
+---
+
+## 🔄 Workflow
+
+- Automated job runs every hour
+- Silver → Gold dependency
+- Retry logic enabled
+
+---
+
+## 📷 Screenshots
+
+(Add your screenshots here)
+
+---
+
+## ▶️ How to Run
+
+1. Upload CSV to Databricks
+2. Run Bronze → Silver → Gold queries
+3. Create workflow job
+4. Build dashboard
+
+---
+
+## 📌 Learnings
+
+- Built end-to-end ETL pipeline
+- Applied Delta Lake optimizations
+- Implemented job automation
+- Designed interactive dashboards
